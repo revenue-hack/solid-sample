@@ -23,7 +23,6 @@ func (b *Book) PublishDate() time.TIme {
 	return b.publishDate
 }
 
-// 色々な本が増えていくたびにこの関数のロジックが追加される(修正に対して閉じていない)
 func (b *Book) printRentalType() string {
 	switch b.kind {
 	case "novel":

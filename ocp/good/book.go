@@ -23,6 +23,7 @@ func (b *Book) PublishDate() time.TIme {
 	return b.publishDate
 }
 
+// 色々な本が増えていくたびにこの関数のロジックが追加される(修正に対して閉じていない)
 // 本の種類が増えても修正する必要がなくなった
 func (b *Book) printRentalType() string {
 	return fmt.Sprintf("これは%sです", b.kind.String())
