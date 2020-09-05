@@ -1,5 +1,7 @@
 package bad
 
+import "fmt"
+
 type Bird struct {
 	name string
 }
@@ -12,8 +14,8 @@ type Whale struct {
 	Bird
 }
 
-func NewWhale() *Crow {
-	w := &Whale{name: "クジラ"}
+func NewWhale() *Whale {
+	w := &Whale{Bird: Bird{name: "クジラ"}}
 	return w
 }
 

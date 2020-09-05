@@ -19,7 +19,7 @@ func (b *Book) Title() string {
 func (b *Book) Author() string {
 	return b.author
 }
-func (b *Book) PublishDate() time.TIme {
+func (b *Book) PublishDate() time.Time {
 	return b.publishDate
 }
 

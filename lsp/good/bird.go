@@ -19,6 +19,6 @@ type Crow struct {
 }
 
 func NewCrow() *Crow {
-	c := &Crow{name: "カラス"}
+	c := &Crow{Bird: Bird{name: "カラス"}}
 	return c
 }
