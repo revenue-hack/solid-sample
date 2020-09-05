@@ -6,7 +6,7 @@ type User struct {
 }
 
 type UserInterface interface {
-	Authenticated() bool
+	Authenticated(u *User) bool
 	List() []*User
 }
 

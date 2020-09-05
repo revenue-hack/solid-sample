@@ -29,8 +29,8 @@ func adminAuthenticationRoute() {
 	name := "test_name"
 	password := "password"
 
-	impl := UserInterfaceImpl{}
-	use := &AdminAuthenticationUseCase{}
+	impl := &UserInterfaceImpl{}
+	use := &AdminAuthenticationUseCase{userInterface: impl}
 	use.do(name, password)
 }
 
@@ -39,8 +39,8 @@ func userList() {
 	name := "test_name"
 	password := "password"
 
-	impl := UserInterfaceImpl{}
-	use := &UserListUseCase{}
+	impl := &UserInterfaceImpl{}
+	use := &UserListUseCase{userInterface: impl}
 	users := use.do(name, password)
 	log.Println(users)
 }
