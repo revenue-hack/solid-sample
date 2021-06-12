@@ -6,10 +6,10 @@ type User struct {
 }
 
 type AdminUserInterface interface {
-	Authenticated() bool
+	Authenticated(u *User) bool
 }
 type ClientUserInterface interface {
-	ClientAuthenticated() bool
+	ClientAuthenticated(u *User) bool
 	List() []*User
 }
 

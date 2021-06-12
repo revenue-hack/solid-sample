@@ -28,6 +28,8 @@ func (b *Book) printRentalType() string {
 		return "これは小説です"
 	case "comics":
 		return "これは漫画です"
+	case "documentary":
+		return "これはドキュメンタリです"
 	default:
 		return ""
 	}
