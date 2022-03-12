@@ -3,7 +3,7 @@ package good
 type SwimAction interface {
 	swim()
 }
-type EastAction interface {
+type EatAction interface {
 	eat()
 }
 type FlyAction interface {
@@ -13,11 +13,11 @@ type FlyAction interface {
 // 実装する必要のないものは実装しない
 
 type CrowAction interface {
-	EastAction
+	EatAction
 	FlyAction
 }
 
 type WhaleAction interface {
-	EastAction
+	EatAction
 	SwimAction
 }
